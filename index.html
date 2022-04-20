@@ -10,36 +10,69 @@
 <body>
   <h1>Example form</h1>
   <form class="form flex-column" action="./test">
-    <label class="flex-column">
-      <span>Name</span>
-      <input 
-        type="text" 
-        placeholder="Name" 
-        autofocus
-        name="name"
-        required
-        pattern="^[A-Z][a-z]{1,12}$"
-        />
-    </label>
-    <label class="flex-column">
-      <span>Password</span>
-      <input 
-        type="password" 
-        placeholder="Password"
-        name="password"
-        required
-        />
-    </label>
+    <fieldset>
+      <legend>Personal data</legend>
+      <label class="flex-column">
+        <span>Name</span>
+        <input 
+          type="text" 
+          placeholder="Name"
+          value="Elon" 
+          autofocus
+          name="name"
+          autocomplete="username"
+          />
+      </label>
+      <label class="flex-column">
+        <span>Password</span>
+        <input 
+          type="password" 
+          placeholder="Password"
+          name="password"
+          />
+      </label>
+    </fieldset>
     <label class="flex-column">
       <span>Email</span>
       <input 
-        type="email" 
+        type="text" 
         placeholder="email@gmail.com"
         name="email"
-        required
         />
-    </label>   
+    </label>
+    <fieldset>
+      <legend>Choose gender</legend>
+      <label>
+        <span>male</span>
+        <input 
+          type="radio" name="gender" value="male" checked/>
+      </label>
+      <label>
+        <span>female</span>
+        <input 
+          type="radio" name="gender" value="female"/>
+      </label> 
+    </fieldset>
+    <fieldset>
+      <legend>Courses</legend>
+      <label>
+        <span>css</span>
+        <input 
+          type="checkbox" name="Courses" value="css"/>
+      </label>
+      <label>
+        <span>html</span>
+        <input 
+          type="checkbox" name="Courses" value="html"/>
+      </label>
+      <label>
+        <span>js</span>
+        <input 
+          type="checkbox" name="Courses" value="js"/>
+      </label>
+    </fieldset>  
     <input type="submit" value="submit">
+    <input type="reset" value="reset">
   </form>
 </body>
 </html>
