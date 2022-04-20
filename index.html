@@ -63,7 +63,7 @@
       <label>
         <span>html</span>
         <input 
-          type="checkbox" name="Courses" value="html"/>
+          type="checkbox" name="Courses" value="html" checked/>
       </label>
       <label>
         <span>js</span>
@@ -71,6 +71,20 @@
           type="checkbox" name="Courses" value="js"/>
       </label>
     </fieldset>  
+    <fieldset>
+      <legend>Message</legend>
+      <textarea name="message" id="" cols="20" ></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Select town</legend>
+      <select name="town" multiple size="5">
+        <option value="1">Zaporizhia</option>
+        <option value="2">NewYork</option>
+        <option value="3">LosAngeles</option>
+        <option value="4">Chornobaevka</option>
+        <option value="5">Dnipro</option>
+      </select>
+    </fieldset>
     <input type="submit" value="submit">
     <input type="reset" value="reset">
   </form>
