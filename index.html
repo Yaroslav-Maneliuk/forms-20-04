@@ -8,101 +8,42 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <h1>Example form</h1>
-  <form class="form flex-column" action="./test">
-    <fieldset>
-      <legend>Personal data</legend>
-      <label class="flex-column">
-        <span>Name</span>
-        <input 
-          type="text" 
-          placeholder="Name"
-          value="Elon" 
-          autofocus
-          name="name"
-          autocomplete="username"
-          />
-      </label>
-      <label class="flex-column">
-        <span>Password</span>
-        <input 
-          type="password" 
-          placeholder="Password"
-          name="password"
-          />
-      </label>
-    </fieldset>
-    <label class="flex-column">
-      <span>Email</span>
-      <input 
-        type="text" 
-        placeholder="email@gmail.com"
-        name="email"
-        />
-    </label>
-    <fieldset>
-      <legend>Choose gender</legend>
-      <label>
-        <span>male</span>
-        <input 
-          type="radio" name="gender" value="male" checked/>
-      </label>
-      <label>
-        <span>female</span>
-        <input 
-          type="radio" name="gender" value="female"/>
-      </label> 
-    </fieldset>
-    <fieldset>
-      <legend>Courses</legend>
-      <label>
-        <span>css</span>
-        <input 
-          type="checkbox" name="Courses" value="css"/>
-      </label>
-      <label>
-        <span>html</span>
-        <input 
-          type="checkbox" name="Courses" value="html" checked/>
-      </label>
-      <label>
-        <span>js</span>
-        <input 
-          type="checkbox" name="Courses" value="js"/>
-      </label>
-    </fieldset>  
-    <fieldset>
-      <legend>Message</legend>
-      <textarea name="message" id="" cols="20" ></textarea>
-    </fieldset>
-    <fieldset>
-      <legend>Select town</legend>
-      <select name="town">
-        <optgroup label="uk">
-          <option value="1">Zaporizhia</option>
-        <option value="5">Dnipro</option>
-        <option value="4" selected>Chornobaevka</option>
-        </optgroup>
-        <optgroup label="us">
-          <option value="3">LosAngeles</option>
-        <option value="2">NewYork</option>
-        </optgroup>
-      </select>
-    </fieldset>
-    <fieldset>
-      <legend>Select super hero</legend>
-        <datalist id="super hero"> 
-          <option value="Betman"></option>
-          <option value="Robin"></option>
-          <option value="Robin Good"></option>
-          <option value="Deadpool"></option>
-          <option value="Spiderman"></option>
-        </datalist>
-        <input type="text" name="hero" list="super hero">
-      </select>
-    </fieldset>
-    <input type="submit" value="submit">
-    <input type="reset" value="reset">
-  </form>
+  <main>
+    <h1>User cards</h1>
+    <section class="container">
+      <article class="user-card">
+        <img class="user-avatar" src="./assets/images/musk.webp" alt="">
+        <div class="info">
+          <h2>Elon Musk</h2>
+          <button>ui designer</button>
+          <button>+follow</button>
+        </div>
+      </article>
+      <article class="user-card">
+        <img class="user-avatar" src="./assets/images/musk.webp" alt="">
+        <div class="info">
+          <h2>Elon Musk</h2>
+          <button>ui designer</button>
+          <button>+follow</button>
+        </div>
+      </article>
+      <article class="user-card">
+        <img class="user-avatar" src="./assets/images/musk.webp" alt="">
+        <div class="info">
+          <h2>Elon Musk</h2>
+          <button>ui designer</button>
+          <button>+follow</button>
+        </div>
+      </article>
+      <article class="user-card">
+        <img class="user-avatar" src="./assets/images/musk.webp" alt="">
+        <div class="info">
+          <h2>Elon Musk</h2>
+          <button>ui designer</button>
+          <button>+follow</button>
+        </div>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
